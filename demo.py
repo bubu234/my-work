@@ -3,7 +3,7 @@ import turtle
 t = turtle.Turtle()
 s = turtle.Screen()
 s.bgcolor('black')
-t.speed(0)
+t.speed(0.1)
 col = ("yellow", "pink", "cyan", "light green", "red")
 
 for i in range(150):
