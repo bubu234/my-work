@@ -1,9 +1,18 @@
+import turtle
+import colorsys
 
-num1 = input("enter first number");
-num2 = input("enter second number");
-# Add two numbers
-sum =float (num1) + float (num2)
-
-# Display the sum
-print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
- 
+t = turtle.Turtle()
+s = turtle.Screen().bgcolor('black')
+t.speed(0)
+n = 30
+h = 0
+for i in range(200):
+    c = colorsys.hsv_to_rgb(h, 1, 0.8)
+    h += 1 / n
+    t.color(c)
+    t.left(1)
+    t.fd(1)
+    for j in range(2):
+        t.left(2)
+        t.circle(180)
+s.exitonclick()
