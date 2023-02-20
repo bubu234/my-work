@@ -12,4 +12,3 @@ for i in range(150):
     t.lt(90)
     t.circle(190 - i / 3, 90)
     t.lt(60)
-s.exitonclick()
